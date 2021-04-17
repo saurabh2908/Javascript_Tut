@@ -1,0 +1,22 @@
+Execution context
+
+1. memory
+2. code
+
+var a=3;
+let b=4;
+MEMORY
+a)a=undefined (memory)[Globally]
+b)b=undefined (memory)[Locally]<script>
+
+CODE
+
+c)a=3;
+b=4;
+
+TemporalDeadZone: 'let' variable is hoisted & till it is initiallized the value
+
+Hoisting: It is process exution context memory allocation phase varable allo with special keyword undefind which is print first here becos this is what in memory.
+
+ex: console.log(a);
+var a=100;
