@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  const device = ["phone", "laptop", "tablet"];
+  //   console.log(device.toString());
+
+  //   device.pop(); remove last element
+  //   console.log(device);
+
+  // device.push("honda"); add in last
+
+  // device.shift() remove first element
+  // device.unshift("tv") add in first
+
+  //   device.splice(-1, 1);
+
+  //   const arr = device.slice(1);
+
+  //   device.splice(3, 0, "roket");
+  //   console.log(device);
+
+  //   es6
+  //   device.forEach((myFun = (i) => console.log(i)));
+
+  //  const newArray=device.map(
+  //      function (value,index,array){
+  //         //  console.log(array);
+  //          return index + "!" + value+this.name;
+  //      },{
+  //          name:"saurabh",
+  //          age:55
+  //        }
+  //  )
+  //  console.log(newArray)
+
+  // es6 arra.map
+  // const newArray=device.map((value,index,array)=> index + "!" + value)
+  //  console.log(newArray)
+
+  // reduce
+
+  let value = [5, 4, 7, 8];
+  // let acc=0;
+
+  // for(let val of value){
+  //     acc+=val;
+  // }
+  // console.log(acc);
+
+//   function sum(acc, val) {
+//     console.log(acc);
+//     return acc + val;
+//   }
+//   let answer = value.reduce(sum);
+//   console.log(answer);
+
+
+// es6
+
+// function sum(acc, val) {
+//     console.log(acc);
+//     return acc + val;
+//   }
+  let answer = value.reduce((acc,val)=>acc+val,100);
+  console.log(answer);
+  // by default acuumulator takes first value in reduce method
+
+  // destructuring of an array
+
+const device=["mobile","laptop","tab","phone"];
+// es5
+
+// var first=device[0];
+// var second=device[1];
+// var third=device[2];
+// console.log(first);
+
+// es6 
+
+// let [first,second,third]=device;
+// console.log(first);
+
+
+// let [first,,third]=device;
+// console.log(third);
+</script>
