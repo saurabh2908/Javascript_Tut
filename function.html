@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    // functions
+    // fun();
+    // fun1();
+
+
+    // let and const ecma 2015 ecma 6
+    // console.log(a);
+    // var a=1;
+
+    // console.log(b);
+    // let b;
+
+    // let a;
+    // a=10;
+    // console.log(a);
+
+    // const b=10;
+    // console.log(b);
+   
+// var global memory assign undefined
+    // execution context->1.memory 2.code exuction
+    
+    // function fun(){
+    //     var x=2;
+    //     console.log(x);
+    // }
+
+    // function fun1(){
+    //     var x=40;
+    //     console.log(x);
+    // }
+
+    // var is hoisted becos when execution context starts the first memory part is run and allocated all variables into memory
+    // and assign the undefined initially. so in case of var it allocated globally and set undefined initially i.e var is hoisted
+    // similarly in case of let memory allocated but not in global in allocated in diffrent memory space which is local
+    // that means let also hoisted butt in diffrent memory space and the time b/w hoisted and assigning the value that time 
+    // period is called temporal deadzone.
+    // Now you think if let also hoisted so why console.log gives error??
+    // becos of temporal deadzone and when something in temporal deadzone then you cant access that memory part but in case of 
+    // var it is in global memory not in temporal dedzone
+
+    // let and const are local variable
+
+    // shadowing
+    // const c=100;
+    // {
+    //     var b=10;
+    //     let a=20;
+    //     const c=50;
+    //     console.log(a);
+    //     console.log(b);
+    //     console.log(c);
+
+    // }
+    // console.log(c);
+
+    // illegal showdowing
+
+    // let a=20
+    // {
+    //     var a=20;
+    // }
+
+    // function 
+
+    fun();
+    fun1();
+
+    function fun(){
+        var a=20;
+        console.log(a);
+    }
+
+    function fun1(){
+        var b=30;
+        console.log(b);
+    }
+// apply,bind,call
+
+let city={
+    state:'Nepal',
+    country:'Bhootan',
+    // state(){
+    //     console.log(this.state,this.country);
+
+    // }
+}
+
+
+
+function country(m,n){
+    console.log(this.country,this.state,m,n);
+}
+// country.call(city);
+// var x=country.bind(city,"Nikita","Pagal");
+// console.log(x);
+// x();
+
+country.apply(city,["Nikita","Pagal"]);
+
+
+
+
+
+</script>
